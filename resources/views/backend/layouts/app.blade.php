@@ -1,0 +1,6 @@
+@include('backend/layouts/head')
+@include('backend/layouts/sidebar')
+@include('backend/layouts/header')
+@yield('content-page')
+@include('backend/layouts/footer')
+@include('backend/layouts/message')
