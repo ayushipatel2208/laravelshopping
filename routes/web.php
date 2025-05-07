@@ -34,7 +34,7 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('frontend/home', [FrontController::class, 'index'])->name('frontend.index');
-Route::get('frontend/shop', [ShopController::class, 'index'])->name('frontend.shop');
+Route::get('frontend/shop/{categorySlug?}/{subcategorySlug?}', [ShopController::class, 'index'])->name('frontend.shop');
 
 Route::get('backend/index', function () {
     return view('backend/index');
